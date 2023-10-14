@@ -1,7 +1,4 @@
 name: Launcher Build
-on:
-  push:
-    branches: [ master ]
 
 jobs:
   create-release:
