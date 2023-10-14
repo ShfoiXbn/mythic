@@ -1,0 +1,9 @@
+# Generated
+node_modules
+app
+test
+dist
+node-v*
+AppData
+lock.js
+backup

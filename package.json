@@ -1,0 +1,43 @@
+{
+    "name": "mythicsurvival",
+    "preductname": "mythicsurvival",
+    "version": "1.0.0",
+    "description": "Launcher Mincraft MythicSurvival",
+    "main": "src/app.js",
+    "author": "Sterwim",
+    "url": "https://cloud.versavibes.fr/cloud/mythic",
+    "engines": {
+        "node": "^18.x.x"
+    },
+    "scripts": {
+        "start": "cross-env-shell NODE_ENV=dev electron .",
+        "build": "node build.js --build",
+        "icon": "node build.js --icon=https://raw.githubusercontent.com/luuxis/Selvania-Launcher/master/src/assets/images/icon.png",
+        "dev": "nodemon --exec npm start"
+    },
+    "license": "CC0",
+    "nodemonConfig": {
+        "ext": "js,html,css"
+    },
+    "dependencies": {
+        "bytenode": "^1.5.1",
+        "child_process": "^1.0.2",
+        "electron-updater": "^6.1.1",
+        "fs": "^0.0.1-security",
+        "minecraft-java-core": "^3.6.2",
+        "node-fetch": "^2.6.13",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {
+        "cross-env": "^7.0.3",
+        "electron": "^26.0.0",
+        "electron-builder": "^24.6.3",
+        "jimp": "^0.22.10",
+        "nodemon": "^3.0.1",
+        "png2icons": "^2.0.1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/luuxis/Selvania-Launcher.git"
+    }
+}
